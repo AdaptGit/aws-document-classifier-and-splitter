@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "DocSplitter"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1kbr97r4axu99"
+s3_prefix = "DocSplitter"
+region = "ap-southeast-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["SplitPDFFunction=348239578755.dkr.ecr.ap-southeast-2.amazonaws.com/docsplitterf34d7979/splitpdffunction56fcf4fdrepo", "GroupPageByClassFunction=348239578755.dkr.ecr.ap-southeast-2.amazonaws.com/docsplitterf34d7979/grouppagebyclassfunction12aed9e3repo", "MergePDFFunction=348239578755.dkr.ecr.ap-southeast-2.amazonaws.com/docsplitterf34d7979/mergepdffunctionb8703f63repo"]

@@ -42,7 +42,8 @@ def lambda_handler(event, context):
     3. send text to comprehend for classification
     4. return job ids
     """
-    model_arn = "arn:aws:comprehend:ap-southeast-2:819998446679:document-classifier/Classifier-20230206140257"
+    # Change arn for enviornment
+    model_arn = "arn:aws:comprehend:ap-southeast-2:348239578755:document-classifier/Classifier-20230209024503"
 
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
 
